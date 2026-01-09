@@ -82,6 +82,6 @@ export namespace Chat {
   }
 
   export type Message = {
-    content: string;
+    content: string; 
   }
 } 
