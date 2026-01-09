@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>ikachat</title>
+
+    <script>
+      // your config goes here
+      window.ikaconfig = {
+        channel: "qzipppp"
+      };
+    </script>
+  </head>
+  <body x-data>
+    <div id="chat_box" style="height: calc(100% - 10px);">
+      <div x-text="`hi #${$ikachat.channel}`"></div>
+
+      <button @click="$ikachat.join(`ikarii`)">ikarii</button>
+      <button @click="$ikachat.join(`qzippp`)">qzippp</button>
+    </div>
+  </body>
+</html>
