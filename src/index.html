@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="icon" type="image/svg+xml" href="data:;base64,="/>
     <title>ikachat</title>
 
     <script>
@@ -12,12 +13,16 @@
       };
     </script>
   </head>
-  <body x-data>
-    <div id="chat_box" style="height: calc(100% - 10px);">
-      <div x-text="`hi #${$ikachat.channel}`"></div>
+  <body>
+    <main id="chat">
+      <span class="channel-name"></span>
 
-      <button @click="$ikachat.join(`ikarii`)">ikarii</button>
-      <button @click="$ikachat.join(`qzippp`)">qzippp</button>
-    </div>
+      <div class="messages">
+
+      </div>
+
+      <button onclick="ikachat.tmi.join(`ikarii`)">ikarii</button>
+      <button onclick="ikachat.tmi.join(`qzipppp`)">qzipppp</button>
+    </main>
   </body>
 </html>
